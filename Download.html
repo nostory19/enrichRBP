@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static '/assets/img/favicon.ico' %}">
+    <link rel="icon" type="image/png" href="{% static '/assets/img/favicon.ico' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,800" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link href="{% static '/assets/css/main.css' %}" rel="stylesheet" />
+    <link href="{% static '/jicheng.css' %}" rel="stylesheet" />
+    <!-- Animation CSS -->
+    <link href="{% static '/assets/css/vendor/aos.css' %}" rel="stylesheet" />
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <title>Download</title>
+
+</head>
+
+<body>
+    <!------------------------------------------
+NAVBAR
+------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="{% static '/img/4.png' %}">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor02" style="font-size: 17px;">
+                <ul class="navbar-nav mr-auto d-flex align-items-center">
+                    <li class="  nav-item "><a class="nav-link " href="{% url 'home:home_index' %}">
+                            <span class="color-code"><i class="bi bi-house"></i> </span> Home <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'circular_rna_1:circular_rna_1_index' %}"><i class="bi bi-layers-fill"></i> Circular
+                            RNA<span></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="{% url 'linearRNA:linearRNA_index' %}"><i class="bi bi-layers-fill"></i> Linear RNA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'download:download_index' %}"
+                            style="background-color: #ffffff;border-radius: 1.25rem;"><span class="color-code"
+                                style="color:black ;"></span><strong style="color:black ;"><i
+                                    class="bi bi-cloud-arrow-down-fill"></i> Download</strong></a>
+                    </li>
+
+
+                    <li>
+                        <a class="nav-link r" href="{% url 'reference:reference_index' %}"><i class="bi bi-distribute-vertical"></i>
+                            Reference</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'user_guide:user_guide_index' %}"><i class="bi bi-tv-fill"></i> User Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{% url 'contact:contact_index' %}"><i class="bi bi-person-vcard"></i> Contact</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="navbar-nav mr-auto d-flex align-items-center">
+                        <li class="nav-item"><a class="  nav-link " href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="  nav-link" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="nav-item"><a class="  nav-link" href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li class="nav-item"><a class="  nav-link" href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Contact -->
+    <main class="ant-layout-content">
+        <div class="reference-page">
+            <div class="result-result-body">
+                <a href="{% url 'home:home_index' %}">
+                    <button type="button" class="btn result-title-bar-back nav-link " style="background: #3ee032;">
+                        back</button>
+                </a>
+                </button>
+                <div class="ant-breadcrumb">
+                    <span>
+                        <span class="Breadcrumb-Item-text"
+                            style="text-decoration:none; font-family:Times New Roman, Times, serif ;"> <a
+                                href="{% url 'home:home_index' %}" style="color: #000;"><i class="bi bi-house"></i>Home</a></span>
+                        <span class="ant-breadcrumb-separator">/</span>
+                    </span>
+                    <span style="text-decoration:none; font-family:Times New Roman, Times, serif ;">
+                        <span class="Breadcrumb-Item-text"><a>Download</a></span>
+                        <span class="ant-breadcrumb-separator">/</span>
+                    </span>
+                </div>
+            </div>
+            <div class="Publications-body text-center">
+
+                <div class="Publications-body-tips ">
+                    <div class="Publications-body-tips-text">Here are some examples for reference only!</div>
+                    <div class="Publications-body-tips-text1">RBP is ONLY freely available for academic research. And
+                        for commercial usage, please contact us. </div>
+
+                </div>
+
+            </div>
+            <div class="donload-body">
+                <div class="download-card">
+                    <div class="ant-card ant-card-bordered download-card-selectMethod">
+                        <div class="ant-card-head">
+                            <div class="ant-card-head-wrapper">
+                                <div class="ant-card-head-title">
+                                    <div class="download-card-title-text">
+                                        <p>Benchmark datasets:</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-card-body">
+                            <div class="download-card-selectMethod-button-out">
+
+                                <a href="{% url 'home:home_index' %}">
+                                    <button type="button"
+                                        class="btn result-title-bar-data  nav-link download-card-selectMethod-button "
+                                        style="background: #3ee032; float: left;">
+                                        circRNA-RBP</button>
+                                </a>
+                                <div class="data-item">
+                                    <p class="data-item">Thirty-seven circRNAs datasets of length 101</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="download-card-selectMethod-button-out">
+                                <a href="{% url 'home:home_index' %}">
+                                    <button type="button"
+                                        class="btn result-title-bar-data nav-link download-card-selectMethod-button ">
+                                        linRNA-RBP/clip</button>
+                                </a>
+                                <p>Thirty-one linRNAs datasets of length 101</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="download-tag-div">
+                        <span class="ant-tag ant-tag-blue">Please download materials by clicking the button
+                            above.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!--------------------------------------
+FOOTER
+--------------------------------------->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewbox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
+        <path class="bg-black" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
+    </svg>
+    <footer class="bg-black pb-5">
+        <div class="container ">
+            <div class="row text-center">
+                <div class="col col-md">
+                    <p class="mb-4 text-white" style="font-family: Times New Roman, Times, serif; font-size: 15px;"><i
+                            class="bi bi-box-seam-fill"></i> Copyright</h5>
+                    <ul class="list-unstyled text-small">
+                        <li style="font-family: Times New Roman, Times, serif; font-size: 15px;"><a class="text-muted"
+                                href="#">2022-Present</a></li>
+                    </ul>
+                </div>
+                <div class="col col-md">
+                    <p class="mb-4 text-white" style="font-family: Times New Roman, Times, serif;font-size: 15px;"><i
+                            class="bi bi-geo-alt-fill"></i> jilin University at jilin</h5>
+                    <ul class="list-unstyled text-small">
+                        <li style="font-family: Times New Roman, Times, serif;font-size: 15px;"><a class="text-muted"
+                                href="#">China
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col col-md">
+                    <p class="mb-4 text-white" style="font-family: Times New Roman, Times, serif;font-size: 15px;"><i
+                            class="bi bi-envelope-fill"></i> Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li style="font-family: Times New Roman, Times, serif;font-size: 15px;"><a class="text-muted"
+                                href="#">lixt314@jlu.edu.cn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+    <script src="{% static '/assets/js/vendor/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static '/assets/js/vendor/popper.min.js' %}" type="text/javascript"></script>
+    <script src="{% static '/assets/js/vendor/bootstrap.min.js' %}" type="text/javascript"></script>
+    <script src="{% static '/assets/js/functions.js' %}" type="text/javascript"></script>
+
+    <!-- Animation -->
+    <script src="{% static '/assets/js/vendor/aos.js' %}" type="text/javascript"></script>
+    <noscript>
+        <style>
+            *[data-aos] {
+                display: block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        AOS.init({
+            duration: 700
+        });
+    </script>
+
+    <!-- Disable animation on less than 1200px, change value if you like -->
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 1200;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+</body>
+
+</html>
